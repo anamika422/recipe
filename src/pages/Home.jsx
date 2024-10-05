@@ -39,7 +39,7 @@ const Home = () => {
       <div className='grid grid-cols-12 p-4'>
       {
         dataRecipe.map((ele)=>{
-          return <Card className='lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-2 flex fel-col justify-between'>
+          return <Card className='lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-2 flex flex-col justify-between'>
       <CardMedia
         sx={{ height: 140 }}
         image={ele.recipe.image}
