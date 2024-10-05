@@ -10,7 +10,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Home = () => {
   let searchRef=useRef()
-  const[item,setitem]=useState('pizza');
+  const[item,setitem]=useState('chicken');
     const[dataRecipe,setdataRecipe]=useState([]);
     async function getData() {
        
@@ -39,7 +39,7 @@ const Home = () => {
       <div className='grid grid-cols-12 p-4'>
       {
         dataRecipe.map((ele)=>{
-          return <Card className='col-span-4 p-2 mt-3 border border-black-500' sx={{ maxWidth: 345 }}>
+          return <Card className='lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-2 flex fel-col justify-between'>
       <CardMedia
         sx={{ height: 140 }}
         image={ele.recipe.image}
